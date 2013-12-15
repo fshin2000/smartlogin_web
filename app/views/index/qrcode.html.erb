@@ -1,0 +1,14 @@
+				<table border="0" style="margin:auto">
+			 	 <% @qr.modules.each do |qr_line| -%> 
+			    	<tr> 
+			      	<% qr_line.each do |qr_dot| -%> 
+			        <% if  qr_dot %> 
+			          <td width=5px, height=5px, bgcolor="#000000"/> 
+			        <%  else %> 
+			          <td width=5px, height=5px, bgcolor="#FFFFFF"/> 
+			        <% end %> 
+			    	  <% end %> 
+					</tr> 
+				  <% end %> 
+				</table>
+
